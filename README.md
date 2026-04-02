@@ -1,5 +1,5 @@
 # FinFlow — Finance Dashboard
-
+🔗 **Live:** [FinFlow](https://fin-flow-am.vercel.app/)
 A clean, interactive finance dashboard built with **React**, **Tailwind CSS**, and **Recharts**. Designed to help users track their financial activity, visualize spending patterns, and gain actionable insights.
 
 ---
