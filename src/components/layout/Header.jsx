@@ -40,7 +40,7 @@ export default function Header() {
       <div className="flex items-center gap-2">
 
         {/* Role switcher */}
-        <div className="flex items-center gap-1.5 bg-navy-800 border border-slate2-700/40 rounded-xl px-3 py-1.5">
+        <div className="flex cursor-pointer items-center gap-1.5 bg-navy-800 border border-slate2-700/40 rounded-xl px-3 py-1.5">
           {role === 'admin'
             ? <Shield size={14} className="text-accent-light" />
             : <Eye size={14} className="text-warn" />
@@ -49,11 +49,11 @@ export default function Header() {
             value={role}
             onChange={e => setRole(e.target.value)}
             className="
-              bg-transparent text-xs font-medium outline-none cursor-pointer
-              text-slate2-200
+              bg-navy-800 text-xs font-medium outline-none 
+              text-slate2-200 cursor-pointer
             "
           >
-            <option value="admin">Admin</option>
+            <option  value="admin">Admin</option>
             <option value="viewer">Viewer</option>
           </select>
         </div>
