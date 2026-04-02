@@ -16,17 +16,17 @@ export default function TransactionFilters() {
     filters.sortBy !== 'date-desc'
 
   return (
-    <div className="glass-card rounded-2xl p-4 shadow-card">
+    <div className="glass-card rounded-2xl p-10 shadow-card">
       <div className="flex flex-wrap gap-3 items-center">
         {/* Search */}
         <div className="relative flex-1 min-w-[180px]">
           <Search size={14} className="absolute left-3 top-1/2 -translate-y-1/2 text-slate2-500" />
           <input
+            className="form-input !pl-10"
             type="text"
             placeholder="Search transactions..."
             value={filters.search}
             onChange={e => setFilter('search', e.target.value)}
-            className="form-input pl-9"
           />
         </div>
 

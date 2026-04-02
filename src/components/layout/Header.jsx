@@ -73,20 +73,6 @@ export default function Header() {
           <RefreshCw size={15} />
         </button>
 
-        {/* Notifications (decorative) */}
-        <button
-          className="
-            relative flex items-center justify-center
-            w-8 h-8 rounded-xl
-            text-slate2-400 hover:text-slate2-200
-            hover:bg-navy-700 border border-transparent
-            hover:border-slate2-700/40 transition-all duration-200
-          "
-        >
-          <Bell size={15} />
-          <span className="absolute top-1.5 right-1.5 w-1.5 h-1.5 bg-expense rounded-full" />
-        </button>
-
         {/* Dark mode toggle */}
         <button
           onClick={toggleDarkMode}
