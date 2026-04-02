@@ -84,7 +84,7 @@ function RecentActivity() {
     <div className="glass-card rounded-2xl p-5 shadow-card animate-slide-up" style={{ animationDelay: '280ms' }}>
       <div className="flex items-center justify-between mb-4">
         <h2 className="text-sm font-semibold text-slate2-100">Recent Activity</h2>
-        <a href="/Transactions.jsx" className="text-xs text-accent-light hover:text-accent transition-colors">
+        <a href="/transactions" className="text-xs text-accent-light hover:text-accent transition-colors">
           View all →
         </a>
       </div>
