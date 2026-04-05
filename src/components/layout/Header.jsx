@@ -74,7 +74,7 @@ export default function Header() {
         </button>
 
         {/* Dark mode toggle */}
-        <button
+        {/* <button
           onClick={toggleDarkMode}
           className="
             flex items-center justify-center
@@ -85,7 +85,7 @@ export default function Header() {
           "
         >
           {darkMode ? <Sun size={15} /> : <Moon size={15} />}
-        </button>
+        </button> */}
 
         {/* Avatar */}
         <div className="
