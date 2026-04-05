@@ -31,12 +31,15 @@ export default function Sidebar() {
 
       <aside
         className={`
-          fixed top-0 left-0 h-full z-30
-          flex flex-col
-          bg-navy-900 border-r border-slate2-700/30
+          fixed top-0 left-0 h-full z-30 flex flex-col
+          border-r border-theme
           transition-all duration-300 ease-in-out
-          ${sidebarOpen ? 'w-60' : 'w-16'}
+          w-60 bg-[#070E21]
+          ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'}
+          lg:translate-x-0
+          ${sidebarOpen ? 'lg:w-60' : 'lg:w-16'}
         `}
+        style={{ background: 'var(--bg-sidebar)' }}
       >
         {/* Logo */}
         <div className="flex items-center gap-3 px-4 h-16 border-b border-slate2-700/30 overflow-hidden">
@@ -60,7 +63,9 @@ export default function Sidebar() {
               className={({ isActive }) =>
                 `sidebar-link ${isActive ? 'active' : ''}`
               }
+              onClick={() => { if (window.innerWidth < 1024) toggleSidebar() }}
               title={!sidebarOpen ? label : undefined}
+              
             >
               <Icon size={18} className="flex-shrink-0" />
               {sidebarOpen && (
@@ -74,7 +79,7 @@ export default function Sidebar() {
         <button
           onClick={toggleSidebar}
           className="
-            flex items-center justify-center m-3 p-2
+            items-center hidden lg:flex justify-center m-3 p-2
             rounded-xl border border-slate2-700/40
             text-slate2-400 hover:text-slate2-200
             hover:bg-navy-700 transition-all duration-200
