@@ -1,10 +1,11 @@
-# FinFlow — Finance Dashboard
+# FinFlow - Finance Dashboard
+🔗 **Live:** [FinFlow](https://fin-flow-am.vercel.app/)
 
-A clean, interactive finance dashboard built with **React**, **Tailwind CSS**, and **Recharts**. Designed to help users track their financial activity, visualize spending patterns, and gain actionable insights.
+> A clean, interactive finance dashboard built with **React**, **Tailwind CSS**, and **Recharts**. Designed to help users track their financial activity, visualize spending patterns, and gain actionable insights.
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 # 1. Clone or unzip the project
@@ -22,7 +23,7 @@ npm run dev
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | Tool | Purpose |
 |------|---------|
@@ -37,7 +38,7 @@ npm run dev
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -67,7 +68,7 @@ src/
 
 ---
 
-## ✨ Features
+## Features
 
 ### 1. Dashboard Overview
 - **4 Summary Cards** — Total Balance, Monthly Income, Monthly Expenses, Savings Rate
@@ -122,7 +123,7 @@ All state lives in `AppContext.jsx`:
 
 ---
 
-## 🎨 Design System
+## Design System
 
 **Theme: "Midnight Ledger"** — Professional dark fintech aesthetic
 
@@ -142,7 +143,7 @@ All state lives in `AppContext.jsx`:
 
 ---
 
-## 📊 Mock Data
+## Mock Data
 
 Located in `src/data/mockData.js`:
 - **72 transactions** from Oct 2025 to Mar 2026
@@ -152,7 +153,7 @@ Located in `src/data/mockData.js`:
 
 ---
 
-## 🔧 Available Scripts
+## Available Scripts
 
 ```bash
 npm run dev      # Start dev server on http://localhost:5173
@@ -162,7 +163,7 @@ npm run preview  # Preview the production build locally
 
 ---
 
-## 💡 Assumptions Made
+## Assumptions Made
 
 1. Currency is **Indian Rupee (₹ INR)** — the number formatting uses `en-IN` locale
 2. "Current month" is **March 2026** — since mock data ends there
@@ -172,9 +173,15 @@ npm run preview  # Preview the production build locally
 
 ---
 
-## 📝 Notes for Reviewers
+## Notes for Reviewers
 
 - State management with **Context API + useReducer** was chosen over Redux as it's sufficient for this scale and requires no additional dependencies
 - All computed/derived data (summaries, chart data, insights) is calculated from the single `transactions` array — no duplicated state
 - The `getFilteredTransactions()` function serves both the Transactions page (with all filters) and the Dashboard's recent activity view
 - Components are kept focused and single-responsibility — layout, data, and UI are cleanly separated
+
+## Built by
+
+**Aditya Matta**  
+B.Tech CST - MAIT, GGSIPU  
+[LinkedIn](https://www.linkedin.com/in/aditya-matta1922/) · [GitHub](https://github.com/Aditya-Matta)
